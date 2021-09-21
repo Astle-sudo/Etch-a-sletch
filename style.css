@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+
+body {
+    background-color: #171717;
+    user-select: none;
+}
+
+h1 {
+    margin: 2vw 2vw 2vw 1vw;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: bolder;
+    color: #EDEDED;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    height: 640px;
+    width: 640px;
+    border: 2px solid black;
+    float: right;
+    box-shadow: 0px 0px 10px 5px #444444;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+  
+.effect-class {
+    background-color: white ;
+}
+  
+.effect-class:hover {
+    background-color: #000000 !important;
+}
+  
+#reset, #rainbow, #fill {
+    margin: 2vw 2vw 2vw 12vw;
+    color: #EDEDED;
+    font-weight: bolder;
+    height: 50px;
+    width: 100px;
+    background-color: #171717;
+    border: 2px solid #EDEDED;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#reset:hover, #rainbow:hover, #fill:hover {
+    color: #171717;
+    background-color: #EDEDED;
+    border: 2px solid #EDEDED;
+}
+
+#color {
+    margin: 2vw 2vw 2vw 14vw;
+    height: 50px;
+}
+
+#myRange {
+    margin: 4vw 2vw 2vw 5vw;
+    -webkit-appearance: none;
+    width: 400px;
+    height: 15px;
+    border-radius: 5px;
+    background: #EDEDED;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+#myRange:hover {
+    opacity: 1;
+}
+  
+#myRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #171717;
+    box-shadow: 0px 0px 10px 5px #444444;
+    cursor: pointer;
+}
